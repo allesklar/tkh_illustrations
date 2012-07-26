@@ -1,6 +1,6 @@
 require "tkh_illustrations/version"
 require 'carrierwave'
-require 'rmagick'
+require 'RMagick'
 require 'stringex'
 
 module TkhIllustrations
