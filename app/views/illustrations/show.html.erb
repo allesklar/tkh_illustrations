@@ -1,0 +1,19 @@
+<% @meta_title = @illustration.name %>
+<% @meta_description = @illustration.name %>
+
+<h1>View an Illustration</h1>
+
+<h3>Name: <%= @illustration.name %></h3>
+<p>
+	<%= image_tag @illustration.image.thumbnail %><br /><%= @illustration.image.thumbnail %><br /><br />
+	<%= image_tag @illustration.image.small %><br /><%= @illustration.image.small %><br /><br />
+	<%= image_tag @illustration.image.medium %><br /><%= @illustration.image.medium %><br /><br />
+	<%= image_tag @illustration.image.large %><br /><%= @illustration.image.large %><br /><br />
+	<%= image_tag @illustration.image.xl %><br /><%= @illustration.image.xl %>
+</p>
+
+<%= link_to 'Edit', edit_illustration_path(@illustration), :class => 'btn btn-mini' %> 
+<%= link_to 'All illustrations', illustrations_path, class: 'btn btn-mini' %> 
+<%= link_to 'Upload New Illustration', new_illustration_path, class: 'btn btn-mini' %>
+
+<%= render 'shared/admin_sidebar' %>
