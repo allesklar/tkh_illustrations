@@ -7,11 +7,11 @@ require "tkh_illustrations/version"
 Gem::Specification.new do |s|
   s.name        = "tkh_illustrations"
   s.version     = TkhIllustrations::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of TkhIllustrations."
-  s.description = "TODO: Description of TkhIllustrations."
+  s.authors     = ["Swami Atma"]
+  s.email       = ["swami@TenThousandHours.eu"]
+  s.homepage    = "http://TenThousandHours.eu"
+  s.summary     = "Rails engine for carrierwave illustrations."
+  s.description = "A Rails engine fo carrierwave upload illustrations with minimum fuss."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
