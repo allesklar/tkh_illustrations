@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email       = ["swami@TenThousandHours.eu"]
   s.homepage    = "http://TenThousandHours.eu"
   s.summary     = "Rails engine for carrierwave illustrations."
-  s.description = "A Rails engine fo carrierwave upload illustrations with minimum fuss."
+  s.description = "A Rails engine for carrierwave upload illustrations with minimum fuss."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'carrierwave', '~> 0.6'
   s.add_dependency "tkh_admin_panel"
   s.add_dependency "rmagick" # for resizing in carrierwave
-  s.add_dependency 'multi_json', '~> 1.3'
+  # s.add_dependency 'multi_json', '~> 1.3' # did not help my current problem
 
   s.add_development_dependency "sqlite3"
 end
