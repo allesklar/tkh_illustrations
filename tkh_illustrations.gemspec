@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
   s.add_dependency "rails", "~> 3.2.6"
   s.add_dependency 'carrierwave', '~> 0.6'
   s.add_dependency "tkh_admin_panel"
+  s.add_dependency "rmagick" # for resizing in carrierwave
 
   s.add_development_dependency "sqlite3"
 end
