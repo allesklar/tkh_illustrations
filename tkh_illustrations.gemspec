@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'carrierwave', '~> 0.6'
   s.add_dependency "tkh_admin_panel"
   s.add_dependency "rmagick" # for resizing in carrierwave
-  # s.add_dependency 'multi_json', '~> 1.3' # did not help my current problem
+  s.add_dependency 'stringex' # for the to_url method in models to_param
 
   s.add_development_dependency "sqlite3"
 end
