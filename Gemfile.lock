@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    tkh_illustrations (0.0.1)
+    tkh_illustrations (0.0.2)
       carrierwave (~> 0.6)
       rails (~> 3.2.6)
       rmagick
