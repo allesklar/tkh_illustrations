@@ -1,7 +1,7 @@
 # TKH Illustrations
 
 
-## 0.0.x
+## 0.0.2
 
 * Fixed bug in require 'RMagick' line. Case sensitive :-(
 * Locale is now part of the url instead of a param
