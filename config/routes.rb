@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  resources :illustrations
+  scope "(:locale)", locale: /#{I18n.available_locales.join("|")}/ do
+    resources :illustrations
+  end
 end
