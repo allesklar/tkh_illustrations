@@ -1,6 +1,6 @@
 # TKH Illustrations
 
-This is a Rails engine with customizes file uploadin via the carrierwave gem.
+This is a Rails engine with customizes file uploading via the carrierwave gem.
 
 Primarily developed for Ten Thousand Hours but we are happy to share if anybody finds it useful.
 

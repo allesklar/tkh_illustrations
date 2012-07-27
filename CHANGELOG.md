@@ -4,6 +4,7 @@
 ## 0.0.x
 
 * Fixed bug in require 'RMagick' line. Case sensitive :-(
+* Locale is now part of the url instead of a param
 
 
 ## 0.0.1
