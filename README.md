@@ -16,6 +16,14 @@ And then execute:
 
     $ bundle
 
+Import migration
+
+		$ rails g tkh_illustrations:install
+
+Run the migration
+
+		$ rake db:migrate
+
 And then of course restart your server!
 
 Your dev machine and production server must have imagemagick installed.
