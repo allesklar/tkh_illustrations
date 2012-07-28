@@ -24,7 +24,9 @@ Run the migration
 
 		$ rake db:migrate
 
-And then of course restart your server!
+And then of course restart your server! Typically:
+
+		$ rails s
 
 Your dev machine and production server must have imagemagick installed.
 
