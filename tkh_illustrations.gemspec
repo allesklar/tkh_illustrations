@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "~> 3.2.6"
   s.add_dependency 'carrierwave', '~> 0.6'
-  s.add_dependency "tkh_admin_panel"
+  s.add_dependency "tkh_admin_panel", '~> 0.0'
   s.add_dependency "rmagick" # for resizing in carrierwave
   s.add_dependency 'stringex' # for the to_url method in models to_param
 
