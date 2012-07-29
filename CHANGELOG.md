@@ -1,6 +1,11 @@
 # TKH Illustrations
 
 
+## 0.0.x
+
+* Only logged in users can access this section
+
+
 ## 0.0.3
 
 * Added an install generator to copy over migration to the host app

@@ -28,9 +28,17 @@ And then of course restart your server! Typically:
 
 		$ rails s
 
-Your dev machine and production server must have imagemagick installed.
 
-You'll need an admin layout. You can of course use the tkh_admin_panel gem.
+## Pre-requisites
+
+
+The following things are needed:
+
+* an admin layout - optional use of the tkh_admin_panel gem
+* the imagemagick library must be installed on your dev machine and production server
+* current_user and authenticate methods should be provided by your authentication system. You can use the tkh_authentication gem to that effect
+
+That's all
 
 
 ## Usage
@@ -40,7 +48,7 @@ The section is located at:
 
     $ /illustrations
 
-... and it should work out of the box providing you have imagemagick on your system.
+... and it should work out of the box
 
 
 ## Contributing
