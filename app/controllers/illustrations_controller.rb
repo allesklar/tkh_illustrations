@@ -1,5 +1,7 @@
 class IllustrationsController < ApplicationController
   
+  before_filter :authenticate
+  
   def index
     @illustrations = Illustration.by_recent
     render layout: 'admin'
