@@ -34,9 +34,9 @@ And then of course restart your server! Typically:
 
 The following things are needed:
 
-* an admin layout - optional use of the tkh_admin_panel gem
+* an application controller switch_to_admin_layout method - optional use of the tkh_admin_panel gem
 * the imagemagick library must be installed on your dev machine and production server
-* current_user and authenticate methods should be provided by your authentication system. You can use the tkh_authentication gem to that effect
+* current_user, authenticate, and authenticate_with_admin methods should be provided by your authentication system. You can use the tkh_authentication gem to that effect
 
 That's all
 

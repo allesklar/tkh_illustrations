@@ -1,25 +1,26 @@
 class IllustrationsController < ApplicationController
   
   before_filter :authenticate
+  before_filter :authenticate_with_admin
   
   def index
     @illustrations = Illustration.by_recent
-    render layout: 'admin'
+    switch_to_admin_layout
   end
   
   def show
     @illustration = Illustration.find(params[:id])
-    render layout: 'admin'
+    switch_to_admin_layout
   end
   
   def new
     @illustration = Illustration.new
-    render layout: 'admin'
+    switch_to_admin_layout
   end
   
   def edit
     @illustration = Illustration.find(params[:id])
-    render layout: 'admin'
+    switch_to_admin_layout
   end
   
   def create
