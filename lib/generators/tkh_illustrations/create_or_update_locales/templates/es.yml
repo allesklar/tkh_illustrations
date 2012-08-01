@@ -1,2 +1,7 @@
 es:
   
+  activerecord: 
+      attributes:
+        illustration:
+          image: 'imagen'
+          name: "nombre"
