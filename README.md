@@ -6,6 +6,19 @@ Primarily developed for Ten Thousand Hours but we are happy to share if anybody 
 
 It's still in its infancy. Many improvements to come.
 
+
+## Pre-requisites
+
+
+The following things are needed:
+
+* an application controller switch_to_admin_layout method - optional use of the tkh_admin_panel gem
+* the imagemagick library must be installed on your dev machine and production server
+* current_user, authenticate, and authenticate_with_admin methods should be provided by your authentication system. You can use the tkh_authentication gem to that effect
+
+That's all
+
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -18,27 +31,15 @@ And then execute:
 
 Import migration
 
-		$ rails g tkh_illustrations:install
+		$ rake tkh_illustrations:install
 
 Run the migration
 
 		$ rake db:migrate
 
-And then of course restart your server! Typically:
+And then of course restart your server!
 
 		$ rails s
-
-
-## Pre-requisites
-
-
-The following things are needed:
-
-* an application controller switch_to_admin_layout method - optional use of the tkh_admin_panel gem
-* the imagemagick library must be installed on your dev machine and production server
-* current_user, authenticate, and authenticate_with_admin methods should be provided by your authentication system. You can use the tkh_authentication gem to that effect
-
-That's all
 
 
 ## Usage

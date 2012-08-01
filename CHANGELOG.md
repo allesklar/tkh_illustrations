@@ -2,6 +2,13 @@
 
 
 
+
+## 0.0.6
+
+* Refactored migration and locale generators and create an install rake task. Now it's all much more consistent with other tkh gems
+
+
+
 ## 0.0.5
 
 * Added authenticate_with_admin before_filter in illustrations controller
