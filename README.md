@@ -42,8 +42,19 @@ And then of course restart your server!
 		$ rails s
 
 
-## Usage
+## Upgrading
 
+If you are upgrading and think you might need to upgrade your migrations or your locale files, run again:
+
+    $ rake tkh_illustrations:install
+
+and
+
+		$ rake db:migrate
+
+
+
+## Usage
 
 The section is located at:
 

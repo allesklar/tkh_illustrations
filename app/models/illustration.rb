@@ -1,8 +1,15 @@
+# this is needed for now to make mass assignment security compatible with the translation of globalize3
+Globalize::ActiveRecord::Translation.class_eval do
+  attr_accessible :locale
+end
+
 class Illustration < ActiveRecord::Base
   
   attr_accessible :image, :name
   
   validates_presence_of :name
+  
+  translates :name
   
   mount_uploader :image, ImageUploader
   

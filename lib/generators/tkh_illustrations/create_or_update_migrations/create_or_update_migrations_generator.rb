@@ -2,7 +2,7 @@ require 'rails/generators/migration'
  
 module TkhIllustrations
   module Generators
-    class CreateMigrationGenerator < ::Rails::Generators::Base
+    class CreateOrUpdateMigrationsGenerator < ::Rails::Generators::Base
       include Rails::Generators::Migration
       source_root File.expand_path('../templates', __FILE__)
       desc "add the migration"
@@ -15,9 +15,11 @@ module TkhIllustrations
         @prev_migration_nr.to_s
       end
  
-      def copy_migrations
-        puts 'creating illustration migration'
+      def create_or_update_migrations
+        puts 'Creating the illustrations table'
         migration_template "create_illustrations.rb", "db/migrate/create_illustrations.rb"
+        puts 'Adding translation of name attribute for Globalize3'
+        migration_template "add_translation_of_name_to_illustrations.rb", "db/migrate/add_translation_of_name_to_illustrations.rb"
       end
  
     end
