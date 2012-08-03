@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    tkh_illustrations (0.0.6)
+    tkh_illustrations (0.0.7)
       carrierwave (~> 0.6)
       globalize3 (~> 0.2)
       rails (~> 3.2.6)

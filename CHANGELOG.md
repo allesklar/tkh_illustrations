@@ -1,6 +1,13 @@
 # TKH Illustrations
 
 
+
+## 0.0.7
+
+* Model translation of illustration name attribute with Globalize3
+* Refactored migration generator and added a new update migration
+
+
 ## 0.0.6
 
 * Refactored migration and locale generators and created an install rake task. Now it's all much more consistent with other tkh gems
