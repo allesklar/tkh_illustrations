@@ -1,0 +1,7 @@
+de:
+  
+  activerecord: 
+      attributes:
+        illustration:
+          image: 'image'
+          name: "name"
