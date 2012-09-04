@@ -2,7 +2,7 @@
 
 This is a Rails engine with customizes file uploading via the carrierwave gem.
 
-Primarily developed for Ten Thousand Hours but we are happy to share if anybody finds it useful.
+Primarily developed for Ten Thousand Hours but we are happy to share if anybody finds it useful. It's meant primarily to be used with the tkh_cms gem suite but over time we want it to be used individually as well. The latter implementation will be accelerated if some issues and pull requests come in, denoting some interest out there.
 
 It's still in its infancy. Many improvements to come.
 

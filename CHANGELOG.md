@@ -2,6 +2,12 @@
 
 
 
+## 0.0.8
+
+* Refactored the generation of meta title and meta description
+* Added German locale but translation strings are still to come
+
+
 ## 0.0.7
 
 * Model translation of illustration name attribute with Globalize3
