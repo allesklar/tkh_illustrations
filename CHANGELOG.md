@@ -2,6 +2,11 @@
 
 
 
+## 0.0.9
+
+* Formatted the upload form for bootstrap
+
+
 ## 0.0.8
 
 * Refactored the generation of meta title and meta description
