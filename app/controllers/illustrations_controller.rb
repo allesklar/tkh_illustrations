@@ -4,7 +4,7 @@ class IllustrationsController < ApplicationController
   before_filter :authenticate_with_admin
   
   def index
-    @illustrations = Illustration.by_recent
+    @illustrations = Illustration.by_recent.paginate(:page => params[:page], :per_page => 25)
     switch_to_admin_layout
   end
   

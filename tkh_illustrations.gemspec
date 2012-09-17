@@ -22,6 +22,8 @@ Gem::Specification.new do |s|
   s.add_dependency "rmagick" # for resizing in carrierwave
   s.add_dependency 'stringex' # for the to_url method in models to_param
   s.add_dependency 'globalize3', '~> 0.2'
+  s.add_dependency 'will_paginate', '~> 3.0'
+  s.add_dependency 'bootstrap-will_paginate'
 
   s.add_development_dependency "sqlite3"
 end
