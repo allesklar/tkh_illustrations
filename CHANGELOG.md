@@ -2,6 +2,12 @@
 
 
 
+## 0.0.10
+
+* Added pagination to index method.
+* Added German translation strings.
+
+
 ## 0.0.9
 
 * Formatted the upload form for bootstrap
