@@ -2,6 +2,11 @@
 
 
 
+## 0.1
+
+* Added header graphic section
+
+
 ## 0.0.10
 
 * Added pagination to index method.

@@ -29,11 +29,11 @@ And then execute:
 
     $ bundle
 
-Import migration
+Import migrations
 
 		$ rake tkh_illustrations:install
 
-Run the migration
+Run the migrations
 
 		$ rake db:migrate
 
@@ -44,9 +44,9 @@ And then of course restart your server!
 
 ## Upgrading
 
-If you are upgrading and think you might need to upgrade your migrations or your locale files, run again:
+If you are upgrading and think you might need to upgrade your migrations or your locale files, run:
 
-    $ rake tkh_illustrations:install
+    $ rake tkh_illustrations:update
 
 and
 
@@ -56,9 +56,13 @@ and
 
 ## Usage
 
-The section is located at:
+The main section is located at:
 
     $ /illustrations
+
+The optional header graphics section is at:
+
+		$ /headers
 
 ... and it should work out of the box
 
