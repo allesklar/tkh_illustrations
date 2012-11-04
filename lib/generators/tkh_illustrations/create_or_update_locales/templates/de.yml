@@ -5,3 +5,6 @@ de:
       illustration:
         image: 'Bild'
         name: "Name"
+      header:
+        photo: 'photo_de'
+        name: "Name"

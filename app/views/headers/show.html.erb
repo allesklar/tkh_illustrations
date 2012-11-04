@@ -1,0 +1,16 @@
+<% content_for :meta_title, @header.name %>
+<% content_for :meta_description, @header.name %>
+
+<h1>View a Header Graphic</h1>
+
+<h3>Name: <%= @header.name %></h3>
+<p>
+	<%= image_tag @header.photo.thumbnail %><br /><%= @header.photo.thumbnail %><br /><br />
+	<%= image_tag @header.photo.large %><br /><%= @header.photo.large %>
+</p>
+
+<%= link_to 'edit', edit_header_path(@header), :class => 'btn btn-mini' %> 
+<%= link_to 'all header graphics', headers_path, class: 'btn btn-mini' %> 
+<%= link_to 'upload new header grahpic', new_header_path, class: 'btn btn-mini' %>
+
+<%= render 'shared/admin_sidebar' %>

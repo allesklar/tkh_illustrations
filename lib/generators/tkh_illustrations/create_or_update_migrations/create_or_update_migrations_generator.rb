@@ -20,6 +20,8 @@ module TkhIllustrations
         migration_template "create_illustrations.rb", "db/migrate/create_illustrations.rb"
         puts 'Adding translation of name attribute for Globalize3'
         migration_template "add_translation_of_name_to_illustrations.rb", "db/migrate/add_translation_of_name_to_illustrations.rb"
+        puts 'Creating the headers table'
+        migration_template "create_headers.rb", "db/migrate/create_headers.rb"
       end
  
     end

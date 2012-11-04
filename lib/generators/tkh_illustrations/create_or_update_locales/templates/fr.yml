@@ -5,3 +5,6 @@ fr:
         illustration:
           image: 'image'
           name: "nom"
+        header:
+          photo: 'photo'
+          name: "nom"

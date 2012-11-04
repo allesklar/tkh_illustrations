@@ -1,7 +1,10 @@
 es:
   
   activerecord: 
-      attributes:
-        illustration:
-          image: 'imagen'
-          name: "nombre"
+    attributes:
+      illustration:
+        image: 'imagen'
+        name: "nombre"
+      header:
+        photo: 'photo_es'
+        name: "nombre"

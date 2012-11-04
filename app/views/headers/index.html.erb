@@ -1,0 +1,32 @@
+<h1>Site Header Graphics</h1>
+
+<table class='table table-striped'>
+	<thead>
+  <tr>	
+			<th>Photo</th>
+	    <th>Name & Paths</th>
+	    <th>Actions</th>
+	  </tr>
+	</thead>
+	
+	<tbody>
+		<% @header.each do |header| %>
+		  <tr>
+		    <td><%= link_to image_tag(header.photo.thumbnail), header %></td>
+		    <td>
+					<h3><%= header.name %> | <%= link_to(' See all resolutions', header) %></h3>
+					<b>Thumbnail</b> path: <%= header.photo.thumbnail %><br />
+					<b>Large</b> path: <%= header.photo.large %><br />
+				</td>
+		    <td><%= link_to 'Edit', edit_header_path(header), class: 'btn btn-mini' %>
+					<%= link_to 'Destroy', header, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-mini btn-danger' %></td>
+		  </tr>
+		<% end %>
+	</tbody>
+</table>
+
+<%= will_paginate @headers %>
+
+<%= link_to 'Create New Header Graphic', new_header_path, class: 'btn btn-primary' %>
+
+<%= render 'shared/admin_sidebar' %>
