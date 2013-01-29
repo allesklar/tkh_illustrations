@@ -7,13 +7,13 @@ fr:
       illustration: 'illustration'
       illustrations: 'les illustrations'
   
-      attributes:
-        illustration:
-          image: 'image'
-          name: "nom"
-        header:
-          photo: 'photo'
-          name: "nom"
+    attributes:
+      header:
+        photo: 'photo'
+        name: "nom"
+      illustration:
+        image: 'image'
+        name: "nom"
 
 
   headers:
@@ -22,7 +22,7 @@ fr:
     upload_new: 'télécharger un nouvel en-tête graphique'
 
     hint:
-      photo: "Idéalement, les graphiques doivent avoir ces caractéristiques : 72 dpi; largeur d'au moins 1,170 pixels; un ratio de 1170X273"
+      photo: "Idéalement, les graphiques doivent avoir ces caractéristiques : 72 dpi; largeur d'au moins 1,170 pixels; un ratio de 1170x273"
 
     create:
       notice: 'Cet en-tête graphique a bien été créé.'

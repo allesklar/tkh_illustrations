@@ -8,11 +8,11 @@ es:
       illustrations: 'illustrations'
   
     attributes:
-      illustration:
-        image: 'imagen'
-        name: "nombre"
       header:
         photo: 'photo_es'
+        name: "nombre"
+      illustration:
+        image: 'imagen'
         name: "nombre"
 
 
