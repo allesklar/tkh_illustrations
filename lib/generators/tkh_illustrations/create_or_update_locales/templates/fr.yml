@@ -1,6 +1,12 @@
 fr:
   
-  activerecord: 
+  activerecord:
+    models:
+      header: 'en-tête graphique'
+      headers: 'les en-tête graphiques'
+      illustration: 'illustration'
+      illustrations: 'les illustrations'
+  
       attributes:
         illustration:
           image: 'image'
@@ -8,3 +14,39 @@ fr:
         header:
           photo: 'photo'
           name: "nom"
+
+
+  headers:
+    all: 'liste des en-tête graphiques'
+    cancel: 'annuler et aller à la liste des graphiques'
+    upload_new: 'télécharger un nouvel en-tête graphique'
+
+    hint:
+      photo: "Idéalement, les graphiques doivent avoir ces caractéristiques : 72 dpi; largeur d'au moins 1,170 pixels; un ratio de 1170X273"
+
+    create:
+      notice: 'Cet en-tête graphique a bien été créé.'
+    update:
+      notice: 'Cet en-tête graphique a bien été mis à jour.'
+
+  illustrations:
+    all: 'liste des illustrations'
+    cancel: 'annuler et aller à la liste des illustrations'
+    name_and_paths: 'nom et chemins des fichiers'
+    upload_new: 'télécharger une nouvelle illustration'
+    
+    create:
+      new:  'créer une nouvelle illustration'
+      notice: 'Cette illustration a bien été créée.'
+    update:
+      notice: 'Cette illustration a bien été mise à jour.'
+
+
+  name_and_paths: 'nom et chemins des fichiers'
+  see_all_resolutions: 'Voir toutes les résolutions'
+
+  errors:
+    messages:
+      carrierwave_processing_error: "l'image n'a pas pu être redimensionnée."
+      carrierwave_integrity_error: "Ce n'est pas une image."
+      carrierwave_download_error: "L'image n'a pu être téléchargée."
