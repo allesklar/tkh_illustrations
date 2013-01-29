@@ -2,12 +2,12 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :photo, hint: "Ideally all header photos should have the following characteristics: 72 dpi; a width of at least 1,170 pixels; a ratio of 1170X273" %>
+    <%= f.input :photo, hint: t('headers.hint.photo') %>
     <%= f.input :name %>
   </div>
 
   <div class="form-actions">
     <%= f.button :submit, :class => 'btn btn-primary' %>
-    <%= link_to 'Cancel & Show all Headers', headers_path, :class => 'btn' %>
+    <%= link_to t('headers.cancel'), headers_path, :class => 'btn' %>
   </div>
 <% end %>

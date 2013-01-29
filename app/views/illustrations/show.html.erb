@@ -1,7 +1,9 @@
 <% content_for :meta_title, @illustration.name %>
 <% content_for :meta_description, @illustration.name %>
 
-<h1>View an Illustration</h1>
+<h1><%= t('activerecord.models.illustrations') %></h1>
+
+
 
 <h3>Name: <%= @illustration.name %></h3>
 <p>
@@ -12,8 +14,8 @@
 	<%= image_tag @illustration.image.xl %><br /><%= @illustration.image.xl %>
 </p>
 
-<%= link_to 'Edit', edit_illustration_path(@illustration), :class => 'btn btn-mini' %> 
-<%= link_to 'All illustrations', illustrations_path, class: 'btn btn-mini' %> 
-<%= link_to 'Upload New Illustration', new_illustration_path, class: 'btn btn-mini' %>
+<%= link_to t('edit'), edit_illustration_path(@illustration), :class => 'btn btn-primary' %> 
+<%= link_to t('illustrations.all'), illustrations_path, class: 'btn' %> 
+<%= link_to t('illustrations.upload_new'), new_illustration_path, class: 'btn' %>
 
 <%= render 'shared/admin_sidebar' %>

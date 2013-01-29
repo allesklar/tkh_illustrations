@@ -1,4 +1,4 @@
-es:
+it:
   
   activerecord:
     models:
@@ -9,11 +9,11 @@ es:
   
     attributes:
       illustration:
-        image: 'imagen'
-        name: "nombre"
+        image: 'image'
+        name: "name"
       header:
-        photo: 'photo_es'
-        name: "nombre"
+        photo: 'photo'
+        name: "name"
 
 
   headers:
@@ -30,7 +30,8 @@ es:
       notice: 'Header graphic was successfully created.'
     update:
       notice: 'Header graphic was successfully updated.'
-      
+
+
   illustrations:
      all: 'all illustrations'
      cancel: 'cancel and view all illustrations'

@@ -1,11 +1,13 @@
-<h1>Listing Illustrations</h1>
+<h1><%= t('activerecord.models.illustrations') %></h1>
+
+
 
 <table class='table table-striped'>
 	<thead>
   <tr>	
-			<th>Illustration</th>
-	    <th>Name & Paths</th>
-	    <th>Actions</th>
+			<th><%= t('activerecord.models.illustration') %></th>
+	    <th><%= t('name_and_paths') %></th>
+	    <th><%= t('actions') %></th>
 	  </tr>
 	</thead>
 	
@@ -14,15 +16,15 @@
 		  <tr>
 		    <td><%= link_to image_tag(illustration.image.thumbnail), illustration %></td>
 		    <td>
-					<h3><%= illustration.name %> | <%= link_to(' See all resolutions', illustration) %></h3>
+					<h3><%= illustration.name %> | <%= link_to(t('see_all_resolutions'), illustration) %></h3>
 					<b>Thumbnail</b> path: <%= illustration.image.thumbnail %><br />
 					<b>Small</b> path: <%= illustration.image.small %><br />
 					<b>Medium</b> path: <%= illustration.image.medium %><br />
 					<b>Large</b> path: <%= illustration.image.large %><br />
 					<b>XL</b> path: <%= illustration.image.xl %>
 				</td>
-		    <td><%= link_to 'Edit', edit_illustration_path(illustration), class: 'btn btn-mini' %>
-					<%= link_to 'Destroy', illustration, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-mini btn-danger' %></td>
+		    <td><%= link_to t('edit'), edit_illustration_path(illustration), class: 'btn btn-mini' %>
+					<%= link_to t('delete'), illustration, method: :delete, data: { confirm: t('are_you_sure') }, class: 'btn btn-mini btn-danger' %></td>
 		  </tr>
 		<% end %>
 	</tbody>
@@ -30,6 +32,6 @@
 
 <%= will_paginate @illustrations %>
 
-<%= link_to 'Create New Illustration', new_illustration_path, class: 'btn btn-primary' %>
+<%= link_to t('illustrations.create.new'), new_illustration_path, class: 'btn btn-primary' %>
 
 <%= render 'shared/admin_sidebar' %>

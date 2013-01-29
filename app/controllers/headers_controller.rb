@@ -26,7 +26,7 @@ class HeadersController < ApplicationController
   def create
     @header = Header.new(params[:header])
     if @header.save
-      redirect_to @header, notice: 'Header was successfully created.'
+      redirect_to @header, notice: t('headers.create.notice')
     else
       render action: "new", layout: 'admin'
     end
@@ -35,7 +35,7 @@ class HeadersController < ApplicationController
   def update
     @header = Header.find(params[:id])
     if @header.update_attributes(params[:header])
-      redirect_to @header, notice: 'Header was successfully updated.'
+      redirect_to @header, notice: t('headers.update.notice')
     else
       render action: "edit", layout: 'admin'
     end

@@ -26,7 +26,7 @@ class IllustrationsController < ApplicationController
   def create
     @illustration = Illustration.new(params[:illustration])
     if @illustration.save
-      redirect_to @illustration, notice: 'Illustration was successfully created.'
+      redirect_to @illustration, notice: t('illustrations.create.notice')
     else
       render action: "new", layout: 'admin'
     end
@@ -35,7 +35,7 @@ class IllustrationsController < ApplicationController
   def update
     @illustration = Illustration.find(params[:id])
     if @illustration.update_attributes(params[:illustration])
-      redirect_to @illustration, notice: 'Illustration was successfully updated.'
+      redirect_to @illustration, notice: t('illustrations.update.notice')
     else
       render action: "edit", layout: 'admin'
     end
