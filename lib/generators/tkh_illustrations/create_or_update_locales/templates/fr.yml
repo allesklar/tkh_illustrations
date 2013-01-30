@@ -47,6 +47,6 @@ fr:
 
   errors:
     messages:
-      carrierwave_processing_error: "l'image n'a pas pu être redimensionnée."
+      carrierwave_processing_error: "L'image n'a pas pu être redimensionnée."
       carrierwave_integrity_error: "Ce n'est pas une image."
       carrierwave_download_error: "L'image n'a pu être téléchargée."
