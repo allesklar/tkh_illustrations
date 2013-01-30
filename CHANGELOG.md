@@ -2,6 +2,12 @@
 
 
 
+## 0.2
+
+* Added admin tab navigation to header and illustration sections
+* Set up many translations
+
+
 ## 0.1
 
 * Added header graphic section
