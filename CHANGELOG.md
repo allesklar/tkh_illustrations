@@ -2,6 +2,11 @@
 
 
 
+## 0.2.1
+
+* More translations
+
+
 ## 0.2
 
 * Added admin tab navigation to header and illustration sections
