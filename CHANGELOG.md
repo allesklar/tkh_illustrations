@@ -2,6 +2,12 @@
 
 
 
+## 0.2.2
+
+* Debugging header show view
+* Fixed big boo-boo in de locale file
+
+
 ## 0.2.1
 
 * More translations
