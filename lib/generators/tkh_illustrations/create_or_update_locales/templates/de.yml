@@ -2,52 +2,52 @@ en:
   
   activerecord:
     models:
-      header: 'header graphic'
-      headers: 'header graphics'
-      illustration: 'illustration'
-      illustrations: 'illustrations'
-  
+      header: 'Header-Grafik'
+      headers: 'Header-Grafiken'
+      illustration: 'Illustration'
+      illustrations: 'Illustrationen'
+
     attributes:
       header:
-        photo: 'photo'
-        name: "name"
+        photo: 'Foto'
+        name: "Name"
       illustration:
-        image: 'image'
-        name: "name"
+        image: 'Bild'
+        name: "Name"
 
- 
+
   headers:
-    all: 'all header graphics'
-    cancel: 'cancel and view all header graphics'
-    upload_new: 'upload new header graphic'
+    all: 'Alle Header-Grafiken'
+    cancel: 'Abrechen und alle Header-Grafiken anzeigen'
+    upload_new: 'Neue Header-Grafiken hochladen'
 
     hint:
-      photo: "Ideally all header photos should have the following characteristics: 72 dpi; a width of at least 1,170 pixels; a ratio of 1170X273"
-      
+      photo: "Header-Fotos sollten folgende Eigenschaften haben: 72 dpi; Mindestbreite 1170 Pixel; ein Verhältnis von 1170x273"
+
     create:
-      new:  'create new header graphic'
-      notice: 'Header graphic was successfully created.'
+      new:  'Neue Header-Grafiken erstellen'
+      notice: 'Header-Grafik wurde erstellt.'
     update:
-      notice: 'Header graphic was successfully updated.'
-  
+      notice: 'Header-Grafik wurde aktualisiert.'
+
   illustrations:
-    all: 'all illustrations'
-    cancel: 'cancel and view all illustrations'
-    upload_new: 'upload new illustration'
-    
+    all: 'Alle Illustrationen'
+    cancel: 'Abbrechen und alle Illustrationen anzeigen'
+    upload_new: 'Neue Illustrationen hochladen'
+
     create:
-      new:  'create new illustration'
-      notice: 'Illustration was successfully created.'
+      new:  'Neue Illustrationen erstellen'
+      notice: 'Illustrationen wurden erstellt.'
     update:
-      notice: 'Illustration was successfully updated.'
-      
-      
-  
-  name_and_paths: 'name and paths'
-  see_all_resolutions: 'See all resolutions'
-      
+      notice: 'Illustrationen wurden aktualisiert.'
+
+
+
+  name_and_paths: 'Name und Pfade'
+  see_all_resolutions: 'Zeige alle Auflösungen'
+
   errors:
     messages:
-      carrierwave_processing_error: "Cannot resize image."
-      carrierwave_integrity_error: "Not an image."
-      carrierwave_download_error: "Couldn't download image."
+      carrierwave_processing_error: "Größe des Bildes konnte nicht verändert werden."
+      carrierwave_integrity_error: "Dies ist kein Bild."
+      carrierwave_download_error: "Das Bild konnte nicht runtergeladen werden."
