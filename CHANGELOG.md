@@ -2,6 +2,11 @@
 
 
 
+## 0.2.3
+
+* A few changes in the es locale
+
+
 ## 0.2.2
 
 * Debugging header show view

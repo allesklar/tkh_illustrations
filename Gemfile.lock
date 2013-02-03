@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    tkh_illustrations (0.2.2)
+    tkh_illustrations (0.2.3)
       bootstrap-will_paginate
       carrierwave (~> 0.6)
       globalize3 (~> 0.2)
