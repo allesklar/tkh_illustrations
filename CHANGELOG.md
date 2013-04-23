@@ -2,6 +2,11 @@
 
 
 
+## 0.2.4
+
+* Un-required RMagic in main gem file. The double requirement was generating warning messages in host apps guard terminal window.
+
+
 ## 0.2.3
 
 * A few changes in the es locale
