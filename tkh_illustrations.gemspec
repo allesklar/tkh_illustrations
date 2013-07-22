@@ -16,13 +16,12 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md", "CHANGELOG.md"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "~> 3.2.6"
-  s.add_dependency 'carrierwave', '~> 0.6'
-  # s.add_dependency "tkh_admin_panel", '~> 0.0' # why would this be needed
+  s.add_dependency "rails", "~> 4.0"
+  s.add_dependency 'carrierwave', '~> 0.9'
   s.add_dependency "rmagick" # for resizing in carrierwave
   s.add_dependency 'stringex' # for the to_url method in models to_param
-  s.add_dependency 'globalize3', '~> 0.2'
-  s.add_dependency 'will_paginate', '~> 3.0'
+  s.add_dependency 'globalize3', '~> 0.3'
+  s.add_dependency 'will_paginate', '~> 3.0.0'
   s.add_dependency 'bootstrap-will_paginate'
 
   s.add_development_dependency "sqlite3"

@@ -1,3 +1,3 @@
 module TkhIllustrations
-  VERSION = "0.2.4"
+  VERSION = "0.9"
 end
