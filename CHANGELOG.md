@@ -1,6 +1,10 @@
 # TKH Illustrations
 
 
+## 0.9
+
+* Upgrading to Ruby 2.0 and Rails 4
+
 
 ## 0.2.4
 
