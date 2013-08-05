@@ -1,6 +1,10 @@
 # TKH Illustrations
 
 
+## 0.2.5
+
+* Added an alphabetical scope to illustration model
+
 
 ## 0.2.4
 
