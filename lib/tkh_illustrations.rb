@@ -2,7 +2,7 @@ require "tkh_illustrations/version"
 require 'carrierwave'
 # require 'RMagick'
 require 'stringex'
-require 'globalize3'
+require 'globalize'
 require 'will_paginate'
 require 'bootstrap-will_paginate'
 
