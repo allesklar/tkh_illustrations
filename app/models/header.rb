@@ -4,18 +4,18 @@ Globalize::ActiveRecord::Translation.class_eval do
 end
 
 class Header < ActiveRecord::Base
-  
+
   attr_accessible :photo, :name
-  
+
   validates_presence_of :name
-  
+
   translates :name
-  
+
   mount_uploader :photo, PhotoUploader
-  
+
   def to_param
     name ? "#{id}-#{name.to_url}" : id
   end
 
-  scope :by_recent, :order => 'updated_at desc'
+  scope :by_recent, -> { order('updated_at desc') }
 end

@@ -17,6 +17,6 @@ class Illustration < ActiveRecord::Base
     name ? "#{id}-#{name.to_url}" : id
   end
 
-  scope :by_recent, :order => 'updated_at desc'
-  scope :alphabetically, order('name')
+  scope :by_recent, -> { order('updated_at desc') }
+  scope :alphabetically, -> { order('name') }
 end
