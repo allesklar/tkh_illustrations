@@ -1,6 +1,13 @@
 # TKH Illustrations
 
 
+
+## 0.9.1
+
+* Various fixes and tweaks related to the upgrade
+* Added alphabetical scope to illustration model
+
+
 ## 0.9
 
 * Upgrading to Ruby 2.0 and Rails 4
