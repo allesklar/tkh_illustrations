@@ -1,16 +1,14 @@
-<h1><%= t('activerecord.models.illustrations') %></h1>
-
-<%= render 'tab_admin_menu' %>
+<%= render 'section_header' %>
 
 <table class='table table-striped'>
 	<thead>
-  <tr>	
+  <tr>
 			<th><%= t('activerecord.models.illustration') %></th>
 	    <th><%= t('name_and_paths') %></th>
 	    <th><%= t('actions') %></th>
 	  </tr>
 	</thead>
-	
+
 	<tbody>
 		<% @illustrations.each do |illustration| %>
 		  <tr>
@@ -23,8 +21,8 @@
 					<b>Large</b> path: <%= illustration.image.large %><br />
 					<b>XL</b> path: <%= illustration.image.xl %>
 				</td>
-		    <td><%= link_to t('edit'), edit_illustration_path(illustration), class: 'btn btn-mini' %>
-					<%= link_to t('delete'), illustration, method: :delete, data: { confirm: t('are_you_sure') }, class: 'btn btn-mini btn-danger' %></td>
+		    <td><%= link_to t('edit'), edit_illustration_path(illustration), class: 'btn btn-xs btn-default' %>
+					<%= link_to t('delete'), illustration, method: :delete, data: { confirm: t('are_you_sure') }, class: 'btn btn-xs btn-danger' %></td>
 		  </tr>
 		<% end %>
 	</tbody>

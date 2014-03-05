@@ -47,6 +47,16 @@ class IllustrationsController < ApplicationController
     redirect_to illustrations_url
   end
 
+  def search
+    illustration = Illustration.where('name = ?', illustration_params[:name]).first
+    if illustration
+      redirect_to illustration
+    else
+      flash[:warning] = "We could not find the illustration. Please make sure the name is accurate"
+      redirect_to illustrations_path
+    end
+  end
+
   private
 
   # Never trust parameters from the scary internet, only allow the white list through.

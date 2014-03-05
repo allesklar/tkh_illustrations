@@ -1,13 +1,9 @@
 <%= simple_form_for @illustration, :html => { multipart: true, class: 'form-horizontal' } do |f| %>
   <%= f.error_notification %>
 
-  <div class="form-inputs">
-    <%= f.input :image, label: t('activerecord.attributes.illustration.image') %>
-    <%= f.input :name, label: t('activerecord.attributes.illustration.name') %>
-  </div>
-
-  <div class="form-actions">
+    <%= f.input :image, label: t('activerecord.attributes.illustration.image') %><br />
+    <%= f.input :name, label: t('activerecord.attributes.illustration.name') %><br />
     <%= f.button :submit, :class => 'btn btn-primary' %>
-    <%= link_to t('illustrations.cancel'), illustrations_path, :class => 'btn' %>
-  </div>
+    <%= link_to t('illustrations.cancel'), illustrations_path, :class => 'btn btn-default btn-xs' %>
+
 <% end %>

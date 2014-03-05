@@ -1,0 +1,20 @@
+<%= form_for Illustration.new, url: search_illustrations_path, html: { id: 'search-form' }, method: :get do |f| %>
+<%#= f.error_notification %>
+
+  <%= f.text_field :name,
+              label: false,
+              required: false,
+              placeholder: 'search by illustration name',
+              size: 35,
+              as: :string,
+              autofocus: 'autofocus',
+              id: 'illustration_name',
+              :wrapper_html => { :id => 'name' },
+              :autocomplete => 'off',
+              :data => {  provide: 'typeahead',
+                          items: 10,
+                          source: Illustration.alphabetically.map(&:name).to_json }
+  %>
+  <%= f.submit 'find graphic', :class => 'btn btn-xs btn-primary' %>
+
+<% end %>
