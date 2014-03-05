@@ -2,6 +2,12 @@
 
 
 
+
+## 0.9.2
+
+* Implemented search of illustrations in admin panel
+
+
 ## 0.9.1
 
 * Various fixes and tweaks related to the upgrade

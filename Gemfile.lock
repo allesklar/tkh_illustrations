@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    tkh_illustrations (0.9.1)
+    tkh_illustrations (0.9.2)
       bootstrap-will_paginate
       carrierwave (~> 0.9)
       globalize (~> 4.0.0)
@@ -42,10 +42,11 @@ GEM
     bootstrap-will_paginate (0.0.10)
       will_paginate
     builder (3.1.4)
-    carrierwave (0.9.0)
+    carrierwave (0.10.0)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
       json (>= 1.7)
+      mime-types (>= 1.16)
     erubis (2.7.0)
     globalize (4.0.0)
       activemodel (>= 4.0.0, < 5)
