@@ -2,15 +2,17 @@
 
 <%= render 'tab_admin_menu' %>
 
+<%= will_paginate @headers, inner_window: 2 %>
+
 <table class='table table-striped'>
 	<thead>
-  <tr>	
+  <tr>
 			<th><%= t('activerecord.attributes.header.photo') %></th>
 	    <th><%= t('name_and_paths') %></th>
 	    <th><%= t('actions') %></th>
 	  </tr>
 	</thead>
-	
+
 	<tbody>
 		<% @headers.each do |header| %>
 		  <tr>
@@ -27,7 +29,7 @@
 	</tbody>
 </table>
 
-<%= will_paginate @headers %>
+<%= will_paginate @headers, inner_window: 2 %>
 
 <%= link_to t('headers.create.new'), new_header_path, class: 'btn btn-primary' %>
 
