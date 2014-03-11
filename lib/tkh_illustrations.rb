@@ -4,7 +4,6 @@ require 'carrierwave'
 require 'stringex'
 require 'globalize'
 require 'will_paginate'
-require 'bootstrap-will_paginate'
 
 module TkhIllustrations
   class Engine < ::Rails::Engine
