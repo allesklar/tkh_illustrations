@@ -2,6 +2,10 @@
 
 
 
+## 0.9.3
+
+* Fixed up and improved paginators
+
 
 ## 0.9.2
 
