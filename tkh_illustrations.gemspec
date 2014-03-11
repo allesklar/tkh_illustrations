@@ -24,7 +24,6 @@ Gem::Specification.new do |s|
   # s.add_dependency 'globalize3', '~> 0.3'
   s.add_dependency 'globalize', '~> 4.0.0'
   s.add_dependency 'will_paginate'
-  s.add_dependency 'bootstrap-will_paginate'
 
   s.add_development_dependency "sqlite3"
 end
