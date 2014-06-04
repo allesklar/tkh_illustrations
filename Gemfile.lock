@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    tkh_illustrations (0.9.3)
+    tkh_illustrations (0.9.4)
       carrierwave (~> 0.9)
       globalize (~> 4.0.0)
       rails (> 4.0.1)
@@ -45,7 +45,7 @@ GEM
       json (>= 1.7)
       mime-types (>= 1.16)
     erubis (2.7.0)
-    globalize (4.0.0)
+    globalize (4.0.1)
       activemodel (>= 4.0.0, < 5)
       activerecord (>= 4.0.0, < 5)
     hike (1.2.3)
@@ -79,7 +79,7 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rake (10.1.1)
     rmagick (2.13.2)
-    sprockets (2.11.0)
+    sprockets (2.12.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)

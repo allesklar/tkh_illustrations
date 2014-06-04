@@ -2,6 +2,12 @@
 
 
 
+## 0.9.4
+
+* Added a Downloads resource for MP3 sound files and PDF documents
+* Added an XXL size to image uploader connected with illustrations
+
+
 ## 0.9.3
 
 * Fixed up and improved paginators
