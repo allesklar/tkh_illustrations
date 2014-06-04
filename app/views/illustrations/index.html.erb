@@ -21,7 +21,8 @@
 					<b>Small</b> path: <%= illustration.image.small %><br />
 					<b>Medium</b> path: <%= illustration.image.medium %><br />
 					<b>Large</b> path: <%= illustration.image.large %><br />
-					<b>XL</b> path: <%= illustration.image.xl %>
+					<b>XL</b> path: <%= illustration.image.xl %><br />
+					<b>XXL</b> path: <%= illustration.image.xxl %>
 				</td>
 		    <td><%= link_to t('edit'), edit_illustration_path(illustration), class: 'btn btn-xs btn-default' %>
 					<%= link_to t('delete'), illustration, method: :delete, data: { confirm: t('are_you_sure') }, class: 'btn btn-xs btn-danger' %></td>

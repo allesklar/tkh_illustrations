@@ -48,6 +48,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   version(:medium) { process :resize_to_limit => [350, 350] }
   version(:large) { process :resize_to_limit => [450, 450] }
   version(:xl) { process :resize_to_limit => [550, 550] }
+  version(:xxl) { process :resize_to_limit => [900, 900] }
 
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:
@@ -60,7 +61,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   # def filename
   #   "something.jpg" if original_filename
   # end
-  
+
   # got this from http://stackoverflow.com/questions/9561641/carrierwave-temp-directory-set-to-uploads-tmp-folder
   # without this all tmp files would go to /public/uploads/tmp which is not cool at all.
   def cache_dir

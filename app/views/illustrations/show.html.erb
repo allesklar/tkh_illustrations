@@ -9,7 +9,8 @@
 	<%= image_tag @illustration.image.small %><br /><%= @illustration.image.small %><br /><br />
 	<%= image_tag @illustration.image.medium %><br /><%= @illustration.image.medium %><br /><br />
 	<%= image_tag @illustration.image.large %><br /><%= @illustration.image.large %><br /><br />
-	<%= image_tag @illustration.image.xl %><br /><%= @illustration.image.xl %>
+	<%= image_tag @illustration.image.xl %><br /><%= @illustration.image.xl %><br /><br />
+  <%= image_tag @illustration.image.xxl %><br /><%= @illustration.image.xxl %>
 </p>
 <br />
 <%= link_to t('edit'), edit_illustration_path(@illustration), :class => 'btn btn-primary' %><%= link_to t('illustrations.all'), illustrations_path, class: 'btn btn-default' %>
