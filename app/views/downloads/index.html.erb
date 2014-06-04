@@ -14,7 +14,7 @@
 		<% @downloads.each do |download| %>
 		  <tr>
 		    <td><%= download.name %></td>
-		    <td><%= download.thing.url %></td>
+		    <td><%= link_to download.thing.url, download.thing.url %></td>
 		    <td>
 		    	<%= link_to t('edit'), edit_download_path(download), class: 'btn btn-xs btn-default' %>
 					<%= link_to t('delete'), download, method: :delete, data: { confirm: t('are_you_sure') }, class: 'btn btn-xs btn-danger' %>
