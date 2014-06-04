@@ -1,0 +1,5 @@
+<ul class="nav nav-tabs" id="admin-menu-tab">
+	<%= content_tag :li, link_to(t('new'), new_download_path), ({ class: 'active' } if controller.action_name.to_s == 'new' ) %>
+	<%= content_tag :li, link_to(t('list'), downloads_path), ({ class: 'active' } if controller.action_name.to_s == 'index' ) %>
+	<%= content_tag :li, link_to(t('edit'), downloads_path), ({ class: 'active' }) if controller.action_name.to_s == 'edit' %>
+</ul>

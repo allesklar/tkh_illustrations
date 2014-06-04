@@ -5,8 +5,6 @@
 
 class Header < ActiveRecord::Base
 
-  # attr_accessible :photo, :name
-
   validates_presence_of :name
 
   translates :name

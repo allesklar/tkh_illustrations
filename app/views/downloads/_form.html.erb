@@ -1,0 +1,8 @@
+<%= simple_form_for @download, :html => { multipart: true, class: 'form-horizontal' } do |f| %>
+  <%= f.error_notification %>
+
+    <%= f.input :thing, label: 'select document or asset' %><br />
+    <%= f.input :name, label: 'name' %><br />
+    <%= f.button :submit, :class => 'btn btn-primary' %>
+
+<% end %>

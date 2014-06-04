@@ -1,0 +1,31 @@
+<%= render 'section_header' %>
+
+<%= will_paginate @downloads, inner_window: 2 %>
+
+<table class='table table-striped'>
+	<thead>
+  <tr>
+	    <th>name</th>
+	    <th>path</th>
+	  </tr>
+	</thead>
+
+	<tbody>
+		<% @downloads.each do |download| %>
+		  <tr>
+		    <td><%= download.name %></td>
+		    <td><%= download.thing.url %></td>
+		    <td>
+		    	<%= link_to t('edit'), edit_download_path(download), class: 'btn btn-xs btn-default' %>
+					<%= link_to t('delete'), download, method: :delete, data: { confirm: t('are_you_sure') }, class: 'btn btn-xs btn-danger' %>
+				</td>
+		  </tr>
+		<% end %>
+	</tbody>
+</table>
+
+<%= will_paginate @downloads, inner_window: 2 %>
+
+<%= link_to 'upload new asset', new_download_path, class: 'btn btn-default' %>
+
+<%= render 'shared/admin_sidebar' %>

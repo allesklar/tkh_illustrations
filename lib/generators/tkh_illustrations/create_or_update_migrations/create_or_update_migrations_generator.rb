@@ -1,5 +1,5 @@
 require 'rails/generators/migration'
- 
+
 module TkhIllustrations
   module Generators
     class CreateOrUpdateMigrationsGenerator < ::Rails::Generators::Base
@@ -14,7 +14,7 @@ module TkhIllustrations
         end
         @prev_migration_nr.to_s
       end
- 
+
       def create_or_update_migrations
         puts 'Creating the illustrations table'
         migration_template "create_illustrations.rb", "db/migrate/create_illustrations.rb"
@@ -22,8 +22,10 @@ module TkhIllustrations
         migration_template "add_translation_of_name_to_illustrations.rb", "db/migrate/add_translation_of_name_to_illustrations.rb"
         puts 'Creating the headers table'
         migration_template "create_headers.rb", "db/migrate/create_headers.rb"
+        puts 'Creating the downloads table'
+        migration_template "create_downloads.rb", "db/migrate/create_downloads.rb"
       end
- 
+
     end
   end
 end

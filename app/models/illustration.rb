@@ -5,8 +5,6 @@
 
 class Illustration < ActiveRecord::Base
 
-  # attr_accessible :image, :name
-
   validates_presence_of :name
 
   translates :name

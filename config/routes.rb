@@ -6,5 +6,6 @@ Rails.application.routes.draw do
       end
     end
     resources :headers
+    resources :downloads
   end
 end
