@@ -2,6 +2,11 @@
 
 
 
+## 0.9.5
+
+* Fixed up the markup of a few forms.
+
+
 ## 0.9.4
 
 * Added a Downloads resource for MP3 sound files and PDF documents
