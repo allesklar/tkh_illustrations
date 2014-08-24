@@ -1,13 +1,8 @@
-<%= simple_form_for @header, :html => { multipart: true, class: 'form-horizontal' } do |f| %>
+<%= simple_form_for @header, :html => { multipart: true } do |f| %>
   <%= f.error_notification %>
 
-  <div class="form-inputs">
     <%= f.input :photo, hint: t('headers.hint.photo') %>
     <%= f.input :name %>
-  </div>
 
-  <div class="form-actions">
     <%= f.button :submit, :class => 'btn btn-primary' %>
-    <%= link_to t('headers.cancel'), headers_path, :class => 'btn' %>
-  </div>
 <% end %>
