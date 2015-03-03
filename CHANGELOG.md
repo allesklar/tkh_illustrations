@@ -2,6 +2,11 @@
 
 
 
+## 0.9.6
+
+* Removed gem dependency versions
+
+
 ## 0.9.5
 
 * Fixed up the markup of a few forms.
