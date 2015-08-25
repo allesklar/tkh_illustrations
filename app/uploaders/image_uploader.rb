@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 class ImageUploader < CarrierWave::Uploader::Base
 
   # Include RMagick or MiniMagick support:
@@ -46,9 +44,11 @@ class ImageUploader < CarrierWave::Uploader::Base
   version(:thumbnail) { process :resize_to_limit => [125, 125] }
   version(:small) { process :resize_to_limit => [225, 225] }
   version(:medium) { process :resize_to_limit => [350, 350] }
-  version(:large) { process :resize_to_limit => [450, 450] }
-  version(:xl) { process :resize_to_limit => [550, 550] }
+  version(:large) { process :resize_to_limit => [500, 500] }
+  version(:xl) { process :resize_to_limit => [750, 750] }
   version(:xxl) { process :resize_to_limit => [900, 900] }
+  # used in Event model (tkh_event) for event itself and social sharing. Facebook recommends 1200 wide minimum
+  version(:giant) { process :resize_to_limit => [1200, 1200] }
 
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:
