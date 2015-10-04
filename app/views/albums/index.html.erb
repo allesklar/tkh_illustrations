@@ -1,0 +1,30 @@
+<%= render 'section_header' %>
+
+<%= will_paginate @albums, inner_window: 2 %>
+
+<table class='table table-striped'>
+	<thead>
+  	<tr>
+			<th><%= t('activerecord.models.album') %></th>
+	    <th><%= t('actions') %></th>
+	  </tr>
+	</thead>
+
+	<tbody>
+		<% @albums.each do |album| %>
+		  <tr>
+		    <td>
+		    	<%= link_to album.name, album %> <span class="badge"><%= album.images.count %></span>
+		    </td>
+		    <td><%= link_to "<span class='glyphicon glyphicon-pencil'></span> #{t('edit')}".html_safe, edit_album_path(album), class: 'btn btn-xs btn-default' %>
+					<%= link_to "<span class='glyphicon glyphicon-trash'></span> #{t('delete')}".html_safe, album, method: :delete, data: { confirm: t('are_you_sure') }, class: 'btn btn-xs btn-danger' %></td>
+		  </tr>
+		<% end %>
+	</tbody>
+</table>
+
+<%= will_paginate @albums, inner_window: 2 %>
+
+<%= link_to "<span class='glyphicon glyphicon-plus'></span> #{t('albums.create.new')}".html_safe, new_album_path, class: 'btn btn-default' %>
+
+<%= render 'shared/admin_sidebar' %>

@@ -24,6 +24,8 @@ module TkhIllustrations
         migration_template "create_headers.rb", "db/migrate/create_headers.rb"
         puts 'Creating the downloads table'
         migration_template "create_downloads.rb", "db/migrate/create_downloads.rb"
+        puts 'Creating the albums table'
+        migration_template "create_albums.rb", "db/migrate/create_albums.rb"
       end
 
     end

@@ -1,12 +1,14 @@
 fr:
-  
+
   activerecord:
     models:
       header: 'en-tête graphique'
       headers: 'les en-tête graphiques'
       illustration: 'illustration'
       illustrations: 'les illustrations'
-  
+      album: 'album photo'
+      albums: 'albums photos'
+
     attributes:
       header:
         photo: 'photo'
@@ -14,6 +16,11 @@ fr:
       illustration:
         image: 'image'
         name: "nom"
+      albums:
+        name: 'nom'
+        description: "description"
+        image: 'image'
+        images: 'images'
 
 
   headers:
@@ -34,12 +41,23 @@ fr:
     cancel: 'annuler et aller à la liste des illustrations'
     name_and_paths: 'nom et chemins des fichiers'
     upload_new: 'télécharger une nouvelle illustration'
-    
+
     create:
       new:  'créer une nouvelle illustration'
       notice: 'Cette illustration a bien été créée.'
     update:
       notice: 'Cette illustration a bien été mise à jour.'
+
+  albums:
+    all: 'all photo albums'
+    cancel: 'cancel and view all photo albums'
+    upload_new_illustrations: 'upload new image'
+
+    create:
+      new:  'create new photo album'
+      notice: 'Photo album was successfully created.'
+    update:
+      notice: 'Photo album was successfully updated.'
 
 
   name_and_paths: 'nom et chemins des fichiers'

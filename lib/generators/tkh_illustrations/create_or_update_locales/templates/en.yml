@@ -1,12 +1,14 @@
 en:
-  
+
   activerecord:
     models:
       header: 'header graphic'
       headers: 'header graphics'
       illustration: 'illustration'
       illustrations: 'illustrations'
-  
+      album: 'photo album'
+      albums: 'photo albums'
+
     attributes:
       header:
         photo: 'photo'
@@ -14,8 +16,12 @@ en:
       illustration:
         image: 'image'
         name: "name"
+      albums:
+        name: 'name'
+        description: "description"
+        image: 'image'
+        images: 'images'
 
- 
   headers:
     all: 'all header graphics'
     cancel: 'cancel and view all header graphics'
@@ -23,29 +29,40 @@ en:
 
     hint:
       photo: "Ideally all header photos should have the following characteristics: 72 dpi; a width of at least 1,170 pixels; a ratio of 1170X273"
-      
+
     create:
       new:  'create new header graphic'
       notice: 'Header graphic was successfully created.'
     update:
       notice: 'Header graphic was successfully updated.'
-  
+
   illustrations:
     all: 'all illustrations'
     cancel: 'cancel and view all illustrations'
     upload_new: 'upload new illustration'
-    
+
     create:
       new:  'create new illustration'
       notice: 'Illustration was successfully created.'
     update:
       notice: 'Illustration was successfully updated.'
-      
-      
-  
+
+  albums:
+    all: 'all photo albums'
+    cancel: 'cancel and view all photo albums'
+    upload_new_illustrations: 'upload new image'
+
+    create:
+      new:  'create new photo album'
+      notice: 'Photo album was successfully created.'
+    update:
+      notice: 'Photo album was successfully updated.'
+
+
+
   name_and_paths: 'name and paths'
   see_all_resolutions: 'See all resolutions'
-      
+
   errors:
     messages:
       carrierwave_processing_error: "Cannot resize image."

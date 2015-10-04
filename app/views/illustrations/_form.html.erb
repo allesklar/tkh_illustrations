@@ -2,7 +2,7 @@
   <%= f.error_notification %>
 
     <%= f.input :image, label: t('activerecord.attributes.illustration.image') %>
-    <%= f.input :name, label: t('activerecord.attributes.illustration.name') %>
+    <%= f.input :name, label: t('activerecord.attributes.illustration.name'), input_html: { size: 45 } %>
 
     <%= f.button :submit, :class => 'btn btn-primary' %>
 

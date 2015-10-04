@@ -1,0 +1,17 @@
+<%= simple_form_for @album, html: { multipart: true } do |f| %>
+  <%= f.error_notification %>
+
+    <%= f.input :name,
+                label: t('activerecord.attributes.album.name'),
+                input_html: { size: 45 } %>
+    <%= f.input :description,
+                label: t('activerecord.attributes.album.description'),
+                input_html: { cols: 45, rows: 5 } %>
+
+    <%= f.input :images,
+                label: t('activerecord.attributes.album.images'),
+                as: :file,
+                input_html: { multiple: true } %>
+
+    <%= f.button :submit, class: 'btn btn-primary' %>
+<% end %>

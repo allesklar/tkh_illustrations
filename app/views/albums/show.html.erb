@@ -1,0 +1,9 @@
+<%= render 'metas', album: @album %>
+
+<%= content_tag :h1, @album.name %>
+
+<p>
+  <% @album.images.each do |image| %>
+    <%= image_tag image.small %>
+  <% end %>
+</p>

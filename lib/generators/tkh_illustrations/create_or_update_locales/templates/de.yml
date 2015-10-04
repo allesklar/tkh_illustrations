@@ -1,11 +1,13 @@
 de:
-  
+
   activerecord:
     models:
       header: 'Header-Grafik'
       headers: 'Header-Grafiken'
       illustration: 'Illustration'
       illustrations: 'Illustrationen'
+      album: 'photo album'
+      albums: 'photo albums'
 
     attributes:
       header:
@@ -14,6 +16,11 @@ de:
       illustration:
         image: 'Bild'
         name: "Name"
+      albums:
+        name: 'name'
+        description: "description"
+        image: 'image'
+        images: 'images'
 
 
   headers:
@@ -40,6 +47,17 @@ de:
       notice: 'Illustrationen wurden erstellt.'
     update:
       notice: 'Illustrationen wurden aktualisiert.'
+
+  albums:
+    all: 'all photo albums'
+    cancel: 'cancel and view all photo albums'
+    upload_new_illustrations: 'upload new image'
+
+    create:
+      new:  'create new photo album'
+      notice: 'Photo album was successfully created.'
+    update:
+      notice: 'Photo album was successfully updated.'
 
 
 
