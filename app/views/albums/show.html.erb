@@ -4,6 +4,6 @@
 
 <p>
   <% @album.images.each do |image| %>
-    <%= image_tag image.small %>
+    <%= link_to image_tag(image.thumbnail), image.giant.url, data: { lightbox: "album#{@album.id}"} %>
   <% end %>
 </p>
