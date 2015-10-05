@@ -2,6 +2,8 @@
 
 <%= content_tag :h1, @album.name %>
 
+<%= content_tag :p, simple_format(@album.description) %>
+
 <p>
   <% @album.images.each do |image| %>
     <%= link_to image_tag(image.thumbnail), image.giant.url, data: { lightbox: "album#{@album.id}"} %>

@@ -10,7 +10,6 @@ class AlbumsController < ApplicationController
 
   def show
     @album = Album.find(params[:id])
-    render layout: 'albums'
   end
 
   def new
