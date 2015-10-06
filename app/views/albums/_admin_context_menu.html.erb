@@ -1,0 +1,12 @@
+<% if administrator? %>
+
+  <% content_for :admin_context_menu do %>
+
+    <h2><%= t('activerecord.models.albums') %></h2>
+    <p>
+      <%= link_to "<span class='glyphicon glyphicon-pencil'></span> #{t('edit').capitalize}".html_safe, edit_album_path(album), class: "btn btn-sm btn-primary" %><%= link_to "<span class='glyphicon glyphicon-list'></span> all photo albums".html_safe, albums_path, class: 'btn btn-sm btn-default' %><%= content_tag :li, link_to( "<span class='glyphicon glyphicon-comment'></span> #{t('activerecord.models.comments').capitalize} <span class='badge'>#{Comment.pending.count}</span>".html_safe, pending_comments_path ), class: 'btn btn-sm btn-success' if Comment.pending.count > 0 %>
+    </p>
+
+  <% end %>
+
+<% end %>

@@ -21,6 +21,7 @@ de:
         description: "description"
         image: 'image'
         images: 'images'
+        body: 'HTML body'
 
 
   headers:

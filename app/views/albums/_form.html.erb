@@ -2,16 +2,22 @@
   <%= f.error_notification %>
 
     <%= f.input :name,
-                label: t('activerecord.attributes.album.name'),
+                label: t('activerecord.attributes.albums.name'),
                 input_html: { size: 45 } %>
     <%= f.input :description,
-                label: t('activerecord.attributes.album.description'),
+                label: t('activerecord.attributes.albums.description'),
                 input_html: { cols: 45, rows: 5 } %>
 
     <%= f.input :images,
-                label: t('activerecord.attributes.album.images'),
+                label: t('activerecord.attributes.albums.images'),
                 as: :file,
                 input_html: { multiple: true } %>
+
+    <%= f.input :body,
+                label: t('activerecord.attributes.albums.body'),
+                hint: "This formatted text will be displayed below your thumbnail photos",
+                input_html: { rows: 20, class: 'ckeditor' } %>
+
 
     <%= f.button :submit, class: 'btn btn-primary' %>
 <% end %>

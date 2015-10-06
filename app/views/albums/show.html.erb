@@ -9,3 +9,10 @@
     <%= link_to image_tag(image.thumbnail), image.giant.url, data: { lightbox: "album#{@album.id}"} %>
   <% end %>
 </p>
+
+<%= raw @album.body %>
+
+<%# partial in tkh_toolbox gem or has to be added in host app %>
+<%= render 'shared/social_sharing', meta_title: @album.name %>
+
+<%= render 'admin_context_menu', album: @album %>

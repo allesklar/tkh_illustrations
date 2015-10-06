@@ -21,6 +21,7 @@ en:
         description: "description"
         image: 'image'
         images: 'images'
+        body: 'HTML body'
 
   headers:
     all: 'all header graphics'

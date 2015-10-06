@@ -26,6 +26,8 @@ module TkhIllustrations
         migration_template "create_downloads.rb", "db/migrate/create_downloads.rb"
         puts 'Creating the albums table'
         migration_template "create_albums.rb", "db/migrate/create_albums.rb"
+        puts 'Add body html field to the albums table'
+        migration_template "add_body_to_albums.rb", "db/migrate/add_body_to_albums.rb"
       end
 
     end
