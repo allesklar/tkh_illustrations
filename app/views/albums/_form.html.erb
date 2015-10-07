@@ -10,6 +10,7 @@
 
     <%= f.input :images,
                 label: t('activerecord.attributes.albums.images'),
+                hint: "Adjust the filenames so that they sit in their folder in the order you want them to display later on."
                 as: :file,
                 input_html: { multiple: true } %>
 
