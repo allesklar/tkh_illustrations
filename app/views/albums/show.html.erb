@@ -4,11 +4,11 @@
 
 <%= content_tag :p, simple_format(@album.description) %>
 
-<p>
+<div class="slideshow">
   <% @album.images.each do |image| %>
-    <%= link_to image_tag(image.thumbnail), image.giant.url, data: { lightbox: "album#{@album.id}"} %>
+    <%= content_tag :div, link_to(image_tag(image.thumbnail), image.giant.url, data: { lightbox: "album#{@album.id}"}), class: 'individual-slide' %>
   <% end %>
-</p>
+</div>
 
 <%= raw @album.body %>
 
