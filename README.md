@@ -23,7 +23,7 @@ That's all
 
 Add this line to your application's Gemfile:
 
-    gem 'tkh_illustrations', '~> 0.0'
+    gem 'tkh_illustrations', '~> 0.9'
 
 And then execute:
 
@@ -44,11 +44,13 @@ And then of course restart your server!
 
 ## Upgrading
 
-If you are upgrading and think you might need to upgrade your migrations or your locale files, run:
+    $ bundle update tkh_illustrations
+
+Upgrade your migrations or your locale files
 
     $ rake tkh_illustrations:update
 
-and
+and, if there are any new migrations
 
 		$ rake db:migrate
 
