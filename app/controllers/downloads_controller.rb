@@ -1,7 +1,7 @@
 class DownloadsController < ApplicationController
 
   before_filter :authenticate
-  before_action -> { require_permission 'write_downloads' }
+  before_action -> { require_permission_to 'write_downloads' }
 
   def index
     @downloads = Download.by_recent.paginate(:page => params[:page], :per_page => 50)

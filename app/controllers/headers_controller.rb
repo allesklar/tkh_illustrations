@@ -1,7 +1,7 @@
 class HeadersController < ApplicationController
 
   before_filter :authenticate
-  before_action -> { require_permission 'write_graphics' }
+  before_action -> { require_permission_to 'write_graphics' }
 
   def index
     @headers = Header.by_recent.paginate(:page => params[:page], :per_page => 25)

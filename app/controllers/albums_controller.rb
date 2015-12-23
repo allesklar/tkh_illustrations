@@ -1,7 +1,7 @@
 class AlbumsController < ApplicationController
 
   before_filter :authenticate,                              except: [ :show ]
-  before_action -> { require_permission 'write_graphics' }, except: [ :show ]
+  before_action -> { require_permission_to 'write_graphics' }, except: [ :show ]
 
   def index
     @albums = Album.by_recent.paginate(:page => params[:page], :per_page => 25)
