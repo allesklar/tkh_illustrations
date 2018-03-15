@@ -47,7 +47,9 @@ class ImageUploader < CarrierWave::Uploader::Base
   version(:large) { process :resize_to_limit => [500, 500] }
   version(:xl) { process :resize_to_limit => [750, 750] }
   version(:xxl) { process :resize_to_limit => [900, 900] }
-  # used in Event model (tkh_event) for event itself and social sharing. Facebook recommends 1200 wide minimum
+  # used in Event model (tkh_event) for event itself and social sharing.
+  # Facebook recommends 1200 wide minimum
+  # Also used in Page model of tkh_content
   version(:giant) { process :resize_to_limit => [1200, 1200] }
 
   # Add a white list of extensions which are allowed to be uploaded.
