@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.name        = "tkh_illustrations"
   s.version     = TkhIllustrations::VERSION
   s.authors     = ["Swami Atma"]
-  s.email       = ["swami@TenThousandHours.eu"]
+  s.email       = ["swamiatma@yoga108.org"]
   s.homepage    = "https://github.com/allesklar/tkh_illustrations"
   s.summary     = "Rails engine for carrierwave illustrations."
   s.description = "A Rails engine for carrierwave upload illustrations with minimum fuss."
@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md", "CHANGELOG.md"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "> 4.0"
+  s.add_dependency "rails", "~> 6.0.0.beta1"
   s.add_dependency 'carrierwave'
   s.add_dependency "rmagick" # for resizing in carrierwave
   s.add_dependency 'stringex' # for the to_url method in models to_param
