@@ -102,7 +102,7 @@
 
 ## 0.0.5
 
-* Added authenticate_with_admin before_filter in illustrations controller
+* Added authenticate_with_admin before_action in illustrations controller
 * Added a switch_to_admin_layout call in all relevant illustration controller methods
 
 

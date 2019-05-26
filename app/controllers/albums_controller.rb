@@ -1,6 +1,6 @@
 class AlbumsController < ApplicationController
 
-  before_filter :authenticate,                              except: [ :show ]
+  before_action :authenticate,                              except: [ :show ]
   before_action -> { require_permission_to 'write_graphics' }, except: [ :show ]
 
   def index
