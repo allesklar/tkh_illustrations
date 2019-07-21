@@ -14,15 +14,15 @@
 	<tbody>
 		<% @illustrations.each do |illustration| %>
 		  <tr>
-		    <td><%= link_to image_tag(illustration.image.thumbnail), illustration %></td>
+		    <td><%= link_to image_tag(illustration.image.thumbnail.url), illustration %></td>
 		    <td>
 					<h3><%= illustration.name %> | <%= link_to(t('see_all_resolutions'), illustration) %></h3>
-					<b>Thumbnail</b> path: <%= illustration.image.thumbnail %><br />
-					<b>Small</b> path: <%= illustration.image.small %><br />
-					<b>Medium</b> path: <%= illustration.image.medium %><br />
-					<b>Large</b> path: <%= illustration.image.large %><br />
-					<b>XL</b> path: <%= illustration.image.xl %><br />
-					<b>XXL</b> path: <%= illustration.image.xxl %>
+					<b>Thumbnail</b> path: <%= illustration.image.thumbnail.url %><br />
+					<b>Small</b> path: <%= illustration.image.small.url %><br />
+					<b>Medium</b> path: <%= illustration.image.medium.url %><br />
+					<b>Large</b> path: <%= illustration.image.large.url %><br />
+					<b>XL</b> path: <%= illustration.image.xl.url %><br />
+					<b>XXL</b> path: <%= illustration.image.xxl.url %>
 				</td>
 		    <td><%= link_to t('edit'), edit_illustration_path(illustration), class: 'btn btn-xs btn-default' %>
 					<%= link_to t('delete'), illustration, method: :delete, data: { confirm: t('are_you_sure') }, class: 'btn btn-xs btn-danger' %></td>

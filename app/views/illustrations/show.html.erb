@@ -5,12 +5,12 @@
 
 <h3>Name: <%= @illustration.name %></h3>
 <p>
-	<%= image_tag @illustration.image.thumbnail %><br /><%= @illustration.image.thumbnail %><br /><br />
-	<%= image_tag @illustration.image.small %><br /><%= @illustration.image.small %><br /><br />
-	<%= image_tag @illustration.image.medium %><br /><%= @illustration.image.medium %><br /><br />
-	<%= image_tag @illustration.image.large %><br /><%= @illustration.image.large %><br /><br />
-	<%= image_tag @illustration.image.xl %><br /><%= @illustration.image.xl %><br /><br />
-  <%= image_tag @illustration.image.xxl %><br /><%= @illustration.image.xxl %>
+	<%= image_tag @illustration.image.thumbnail.url %><br /><%= @illustration.image.thumbnail.url %><br /><br />
+	<%= image_tag @illustration.image.small.url %><br /><%= @illustration.image.small.url %><br /><br />
+	<%= image_tag @illustration.image.medium.url %><br /><%= @illustration.image.medium.url %><br /><br />
+	<%= image_tag @illustration.image.large.url %><br /><%= @illustration.image.large.url %><br /><br />
+	<%= image_tag @illustration.image.xl.url %><br /><%= @illustration.image.xl.url %><br /><br />
+  <%= image_tag @illustration.image.xxl.url %><br /><%= @illustration.image.xxl.url %>
 </p>
 <br />
 <%= link_to t('edit'), edit_illustration_path(@illustration), :class => 'btn btn-primary' %><%= link_to t('illustrations.all'), illustrations_path, class: 'btn btn-default' %>
