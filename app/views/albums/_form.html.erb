@@ -17,7 +17,14 @@
     <%= f.input :body,
                 label: t('activerecord.attributes.albums.body'),
                 hint: "This formatted text will be displayed below your thumbnail photos",
-                input_html: { rows: 20, class: 'ckeditor' } %>
+                input_html: { class: 'tinymce' } %>
+    <%= tinymce selector: 'textarea.tinymce',
+                branding: false,
+                height: 550,
+                menubar: false, # hiding menu items duplicating icons
+                plugins: "lists link image code fullscreen",
+                toolbar: "formatselect bold italic strikethrough | bullist numlist | alignleft aligncenter alignright alignnone | link unlink image | undo redo selectall code fullscreen"
+    %>                
 
 
     <%= f.button :submit, class: 'btn btn-primary' %>
